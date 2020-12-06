@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<title></title>
+<script src="js/jquery.min.js"></script>
+<style type="text/css">
+#divD{
+width:300px;
+height:100px;
+background-color:#CC99FF;
+position: absolute;
+
+}
+</style>
+<script type="text/javascript">
+$(document).ready(function() {
+$("#btnFadein").bind("click", Fadein); //为btnFadein绑定click时间
+$("#btnFadeout").bind("click", Fadeout); //为btnFadeout绑定click时间
+});
+
+function Fadein(){
+$("#divD").slideDown("slow"); //滑入
+}
+
+function Fadeout(){
+$("#divD").slideUp("slow"); //滑出
+}
+</script>
+</head>
+<body>
+<input type="button" value="滑入" id="btnFadein" />
+<input type="button" value="滑出" id="btnFadeout"/>
+<div id="divD">这是div</div>
+DIV
+</body>
+</html>
