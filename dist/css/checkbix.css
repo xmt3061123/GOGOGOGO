@@ -47,7 +47,7 @@ input[type='checkbox'].checkbix:focus + label > span {
 }
 
 input[type='checkbox'].checkbix:checked + label > span {
-  background: #5ECD62;
+  background: #0074D9;
   border: .1rem solid transparent;
   -webkit-animation: reveal 200ms cubic-bezier(.4,.0,.5,1);
           animation: reveal 200ms cubic-bezier(.4,.0,.5,1);

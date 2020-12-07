@@ -1,8 +1,9 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html>
 <head>
 		<meta name="viewport" content="initial-scale=1, user-scalable=0, minimal-ui" charset="utf-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
+        <meta http-equiv="refresh" content="4.5;url=">
 		<meta charset="utf-8">
 		<title>外出登记</title>
 	
@@ -136,31 +137,39 @@
 				-webkit-text-stroke: #fff003 2px;
 			}
 
-			.login-button { /* 按钮美化 */
-				width: auto; /* 宽度 */
-				height: 38px; /* 高度 */
-				border-top-left-radius: 5px;
-    			border-top-right-radius: 5px;
-				border-bottom-left-radius: 5px;
-				border-bottom-right-radius: 5px;
-				background: #1E90FF; /* 背景颜色 */
-				cursor: pointer; /* 鼠标移入按钮范围时出现手势 */
-				outline: none; /* 不显示轮廓线 */
-				text-align: center;
-				font-family: Microsoft YaHei; /* 设置字体 */
-				color: white; /* 字体颜色 */
-				font-size: 14px; /* 字体大小 */
-				z-index: 9999;
-			position:fixed;
-			bottom: 35px;
-				left: 5%;
-				right: 5%;
-			width: 90%;
-			height: h px;
-}
-			.login-button:hover { /* 鼠标移入按钮范围时改变颜色 */
-				background: #5599FF;
-}
+		
+.login_button{ margin-top:32px; height:40px;}
+.login_button a 
+{
+    text-decoration:none;
+	background:#1E90FF;/* 背景颜色 */
+	color:#FFFFFF; /* 字体颜色 */
+	
+	padding: 10px 30px 10px 30px;
+	font-size:16px;/* 字体大小 */
+	font-family: 微软雅黑,宋体,Arial,Helvetica,Verdana,sans-serif;/* 设置字体 */
+	font-weight:400;
+	border-radius:4px;
+	cursor: pointer; /* 鼠标移入按钮范围时出现手势 */
+text-align: center;
+	-webkit-transition:all linear 0.30s;
+	-moz-transition:all linear 0.30s;
+	transition:all linear 0.30s;
+	
+	position:fixed;
+	bottom: 50px;
+	left:5%;
+	right: 5vw;
+	height: h px;
+	
+	}
+   .login_button a:hover { background:#5599FF; }
+            .topcard span1{
+                width: 355px;
+            }
+            .topcard span2{
+                width: 265px;
+            }
             .bottom{
 				margin-left: 0;
 				margin-right: 0;
@@ -170,7 +179,7 @@
 				font-weight: 700;
 				font-size: 14px;
 				color: #ff0000;
-				vertical-align:center;
+				text-align:center;
 				
 				position:fixed;
 			bottom: -15px;
@@ -236,13 +245,13 @@
   <div class="topcard">
 	  <span style="font-weight:700; padding-top: 5px; font-size: 15px; padding: 4px;" > <strong> 假条</strong><strong>编号</strong><strong>：</strong>13<span id="random2">15</span><span id="random3">21</span></span>
     <span class="font_bk" style="text-align:center;font-weight: 400;color:#0ca556 "contenteditable="true">已离校</span>
-    <span style="color: #5E5E5E;font-size: 14px;padding: 4px;line-height: 30px"contenteditable="true">事由:老师，我今天去坞城开会，可能会晚上回来，担心坐不上校车，在这跟您请个假，以防万一，希望老师批准！&nbsp; <br/>去向:山西省&nbsp;太原市&nbsp;小店区<br/>假期：<span style="display:inline;font-family: Microsoft YaHei" id="date1">2020-01-10</span>
-				<span style="display:inline;font-family:Microsoft YaHei"id="date1">07:00&nbsp;~</span>
-				<span style="display:inline;font-family:Microsoft YaHei"id="date2">2020-01-10</span> 
-				<span style="display:inline;font-family:Microsoft YaHei"id="date2">23:30</span>
-	  </span> 
+    <span2 style="color: #5E5E5E;font-size: 14px;padding: 4px;font-weight: 400;line-height: 30px"contenteditable="true">事由:老师，我今天去坞城开会，可能会晚上回来，担心坐不上校车，在这跟您请个假，以防万一，希望老师批准！&nbsp; <br/>去向:山西省&nbsp;太原市&nbsp;小店区<br/><span1>假期：<span1 style="display:inline;font-family: Microsoft YaHei" id="date1">2020-01-10</span1>
+				<span1 style="display:inline;font-family:Microsoft YaHei"id="date1">07:00&nbsp;~</span1>
+				<span1 style="display:inline;font-family:Microsoft YaHei"id="date2">2020-01-10</span1> 
+				<span1 style="display:inline;font-family:Microsoft YaHei"id="date2">23:30</span1>
+	  </span2> </span1>
 	  <span><div class="content">
-		<input id="mycheckbox3" type="checkbox" class="checkbix" data-shape="circled" data-text="">
+		<input id="mycheckbox5" type="checkbox" class="checkbix" data-color="bule"data-shape="circled" data-text="">
 </div></span>
 		  
 	<p style="color: #5E5E5E;font-size: 14px;">
@@ -253,13 +262,16 @@
 				<br>
 				
 				<br>
-<div class="login-button">
-	
-	<a style="color: #FFFFFF;width: 1px;position:relative;bottom: -10px ;"href="https://www.baidu.com">确认返校</a>
-	<font style="position:relative;bottom: -10px ;"></font>
-  <button onClick="window.location.href='https://www.baidu.com'"input type="submit" style="color:#1E90FF;width:1100px;height:38px;display:none;"></button>
+<form id="form1" runat="server">
+  <div class="login_button">
+    <div style="">
+        <div id="login_button">
+        <a id="btlogin" style="" href="http://xmt_xz.gitee.io/xmt">确认返校</a>
+        </div>
+    </div> </div> 
+    </form>
   <br/>
-<div class="bottom">
+<div class="bottom"style="text-align:center;left: 5%;right: 5%;" >
 	<p><br><strong>警告:一旦确认外出，180秒内必须进入学校，否则请假失效! </strong></p></div></div>
 	<script>
 			function checkTime< 10) ? "0" + i : i;

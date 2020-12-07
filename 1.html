@@ -28,8 +28,8 @@
 			}
 			.pic{
 				height: 100%;
-				background-color: red;
-				background-image: url("https://img.xiumi.us/xmi/ua/1YPWy/i/ea0df7c201d6e2e4206b39f0f61f5ec3-sz_791930.jpg?x-oss-process=style/xmwebp");
+				background-color: black;
+				background-image:src= "src/gaochunchun.jpg";
 				background-size: cover;
 			}
 			.topcard p{
@@ -110,7 +110,7 @@
 				结束：<span id="date2">2020-01-10</span> 23:30
 			</p>
 			</div>
-			<label for="file" style="cursor: pointer;"><div class="pic"></label><img id="output" style="overflow: hidden; height: 100%; width: 100%; min-height: 100%; max-height: 100%;"/>
+			<label for="file" style="cursor: pointer;"><div class="pic"></label><img id="output" src="src/gaochunchun.jpg" style="overflow: hidden; height: 100%; width: 100%; min-height: 100%; max-height: 100%;"/>
 			</div>
 		</div>
 		<input type="file" name="image" id="file" onchange="loadFile(event)" accept="image/*" style="display: none;"/>
@@ -134,7 +134,7 @@
 			}
 		</script>
 		<script>
-			var timeleft = 190;
+			var timeleft = 181;
 			var timer = setInterval(function(){
 				timeleft--;
 				document.getElementById("countdown").textContent = timeleft;
